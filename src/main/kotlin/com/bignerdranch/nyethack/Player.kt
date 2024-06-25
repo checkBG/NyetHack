@@ -4,10 +4,7 @@ package com.bignerdranch.nyethack
 
 import kotlin.system.exitProcess
 
-// extension
-private val String.numVowels
-    get() = count { it.lowercase() in "aeiou" }
-// extension
+
 
 open class Player(
     initialName: String,

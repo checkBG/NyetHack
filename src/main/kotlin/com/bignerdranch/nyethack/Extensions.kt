@@ -27,3 +27,6 @@ fun String.middle(padding: Int, formatChar: String = " "): String {
 fun String.indentChar(lastArgument: String, padding: Int, formatChar: Char = '.'): String {
     return this + lastArgument.padStart(padding - this.length, formatChar)
 }
+
+val String.numVowels
+    get() = count { it.lowercase() in "aeiou" }
