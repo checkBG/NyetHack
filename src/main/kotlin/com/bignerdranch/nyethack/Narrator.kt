@@ -8,7 +8,7 @@ var narrationModifier: (String) -> String = { it }
 inline fun narrate(
     message: String, modifier: (String) -> String = { narrationModifier(it) }
 ) {
-    println(modifier(message).frame(5, "=") + "\n")
+    println(modifier(message).frame(5, "#") + "\n")
 }
 
 fun changeNarratorMood() {
