@@ -110,7 +110,7 @@ class Tavern : Room(TAVERN_NAME) {
             value.forEach { (item, _) ->
                 println(
                     item.indentChar(
-                        lastArgument = "${
+                        attached = "${
                             menuItemPrice.getOrDefault(item, 0.0)
                         }", padding = greeting.length
                     )

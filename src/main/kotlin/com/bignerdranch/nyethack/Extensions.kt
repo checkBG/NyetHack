@@ -24,8 +24,8 @@ fun String.middle(padding: Int, formatChar: String = " "): String {
         .plus(formatChar.padStart(paddingForMiddle))
 }
 
-fun String.indentChar(lastArgument: String, padding: Int, formatChar: Char = '.'): String {
-    return this + lastArgument.padStart(padding - this.length, formatChar)
+fun String.indentChar( attached: String, padding: Int, formatChar: Char = '.'): String {
+    return this +  attached.padStart(padding - this.length, formatChar)
 }
 
 val String.numVowels
